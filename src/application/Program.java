@@ -10,6 +10,8 @@ public class Program {
      Scanner sc = new Scanner(System.in);
 		 ChessMatch chessMatch = new ChessMatch();
      while(true){
+      try{
+      UI.clearScreen();
       UI.printBoard(chessMatch.getPieces()); 
       System.out.println();
       System.out.println("Source: ");
@@ -18,7 +20,17 @@ public class Program {
       System.out.println("target: ");
       ChessPosition target = UI.readChessPosition(sc); 
       ChessPiece capturedPiece = chessMatch.performChessMove(source,target);
-     } 
-	}
+     }
+     catch(ChessException e){
+       System.out.println(e.getMessage());
+       sc.nextLine();
+     }
+     catch(inputMismatchException e){
+       System.out.println(e.getMessage());
+       sc.nextLine();
+     }
+
+    } 
+	
 
 }
