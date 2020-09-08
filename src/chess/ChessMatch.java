@@ -3,6 +3,10 @@ package chess;
 import boardgame.Board;
 import boardgame.Position;
 import boardgame.Piece;
+import java.util.List;
+
+private List<Piece> piecesOnTheBoard = new ArrayList<>();
+private List<Piece> capturedPieces = new ArrayList<>();
 
 public class ChessMatch {
   private int turn;
@@ -48,6 +52,12 @@ public class ChessMatch {
     Piece p = board.RemovePiece(source);
     Piece capturedPiece = board.removePiece(target);
     board.PlacePiece(p, target);
+    
+    if(capturedPiece != null){
+      piecesOnTheBoard.remove(capuredPiece);
+      capuredPieces.add(capuredPiece);
+    }
+    
     return capturedPiece;
   }
   private void validateSourcePosition(Position position){
@@ -72,6 +82,7 @@ public class ChessMatch {
   }
   private void placeNewPiece(char column, int row, ChessPiece piece){
       board.placePiece(piece, new ChessPosition(column, row).toPosition());
+      piecesOnTheBoard.add(pieces);
   }
   private void InicialSetup(){
      placeNewPiece('c', 1, new Rook(board, Color.WHITE));
