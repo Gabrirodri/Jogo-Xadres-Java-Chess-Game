@@ -5,6 +5,7 @@ import boardgame.Position;
 import boardgame.Piece;
 import java.util.List;
 private boolean Check;
+private boolean CheckMate;
 
 private List<Piece> piecesOnTheBoard = new ArrayList<>();
 private List<Piece> capturedPieces = new ArrayList<>();
@@ -28,6 +29,9 @@ public class ChessMatch {
   }
   public boolean getCheck(){
     return check;
+  }
+  public boolean getCheckMate(){
+    return CheckMate;
   }
   public  ChessPiece[][] getPieces(){
     ChessPiece[][] mat = new ChessPiece[board.getRows()][board.getColumns()]
@@ -55,8 +59,14 @@ public class ChessMatch {
       throw new ChessException("You can't put yourself in check")
     }
     check = (testCheck(opponent(currentPlayer))) ? true : false;
+    if(testCheckMate(opponent(currentPlayer))){
+      CheckMate = true;
+      
+    }
+    else{
+     nextTurn(); 
+    }
     
-    nextTurn();
     return (ChessPiece)capturedPiece;
   }
   
@@ -129,6 +139,31 @@ public class ChessMatch {
     }
     return false;                                              
   }
+   private boolean testCheckMate(Color color){
+     if(!testCheck(Color)){
+        return false;
+     }
+     List<piece> list = PieceOnTheBoard.stream().filter(x -> ((ChessPiece)x).getColor() == color).collectors(Collectors.toList());
+     for (Piece p : list) {
+       boolean[][] mat = p.possibleMoves();
+       for (int i=0; i<board.getRows(); i++){
+         for (int j=0; j<board.getColumns(); j++){
+           if(mat[i][j]){
+             Position source = ((ChessPiece)p).getChessPosition().toPosition();
+             Position target = new Position(i, j);
+             Piece capturedPiece = makeMove(source,target);
+             boolean testCheck = testCheck(color);
+             undoMove(source,target,capuredPiece);
+             if (!testecheck){
+               return false;
+             }
+           }
+         }
+       }
+     }
+     return true;
+   }
+  
   private void InicialSetup(){
      placeNewPiece('c', 1, new Rook(board, Color.WHITE));
         placeNewPiece('c', 2, new Rook(board, Color.WHITE));
