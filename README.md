@@ -7,6 +7,28 @@ Seguindo os Passos no CheckList, acompanhando as aulas e a UML do projeto.
 Assim como mostrado na imagem
 ![imagem-projeto](https://github.com/Gabrirodri/Jogo-Xadres-Java-Chess-Game/blob/master/chess-game-image.jpg)
 
+# Getting started (Instalação, Compilação, Execução)
+
+## Download 
+
+Faça Download do repositorio:
+git clone https://github.com/Gabrirodri/Jogo-Xadres-Java-Chess-Game
+
+cd Jogo-Xadres-Java-Chess-Game
+
+## Instaling Using Javac
+Compilação do codigo pelo terminal (Linux)
+find -name "*.java" > sources.txt
+javac @sources.txt
+
+Compilação do codigo pelo terminal (Windows)
+dir /s /B *.java > sources.txt
+javac @sources.txt
+
+## Execução do programa (Run)
+cd src
+java  application/Program
+
 ## Checklist
 - [x] Creating project and git repository
 - [x] First class: Position
