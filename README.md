@@ -9,23 +9,27 @@ Assim como mostrado na imagem
 
 # Getting started (Instalação, Compilação, Execução)
 
-## Download 
+### Download 
 
 Faça Download do repositorio:
 git clone https://github.com/Gabrirodri/Jogo-Xadres-Java-Chess-Game
 
 cd Jogo-Xadres-Java-Chess-Game
 
-## Instaling Using Javac
+### Instaling Using Javac
 Compilação do codigo pelo terminal (Linux)
+
 find -name "*.java" > sources.txt
+
 javac @sources.txt
 
 Compilação do codigo pelo terminal (Windows)
+
 dir /s /B *.java > sources.txt
+
 javac @sources.txt
 
-## Execução do programa (Run)
+### Execução do programa (Run)
 cd src
 java  application/Program
 
