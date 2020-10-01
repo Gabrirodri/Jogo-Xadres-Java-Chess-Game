@@ -12,18 +12,19 @@ Assim como mostrado na imagem
 ### Download 
 
 Faça Download do repositorio:
+
 git clone https://github.com/Gabrirodri/Jogo-Xadres-Java-Chess-Game
 
 cd Jogo-Xadres-Java-Chess-Game
 
 ### Instaling Using Javac
-Compilação do codigo pelo terminal (Linux)
+#### Compilação do codigo pelo terminal (Linux)
 
 find -name "*.java" > sources.txt
 
 javac @sources.txt
 
-Compilação do codigo pelo terminal (Windows)
+#### Compilação do codigo pelo terminal (Windows)
 
 dir /s /B *.java > sources.txt
 
