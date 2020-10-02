@@ -24,13 +24,13 @@ Abra o terminal e faça Download do repositorio:
 * cd Jogo-Xadres-Java-Chess-Game
 
 ### Instaling Using Javac
-#### Compilação do codigo pelo terminal (Linux)(Terminal)
+#### Compilação do codigo pelo terminal (Linux) - (Terminal)
 
 * find -name "*.java" > sources.txt
 
 * javac @sources.txt
 
-#### Compilação do codigo pelo terminal (Windows)(CMD do windows)
+#### Compilação do codigo pelo terminal (Windows) - (CMD do windows)
 
 * dir /s /B *.java > sources.txt
 
