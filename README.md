@@ -14,9 +14,10 @@ Assim como mostrado na imagem
 * Ter ambiente de desenvolvimento java configurado - variaveis globais (JAVA_HOME)
 * Acessar o terminal para executar os comandos ou compilar e executar por uma IDE(Eclipse, IntelliJ IDEA)
 
+
 ### Download 
 
-Faça Download do repositorio:
+Abra o terminal e faça Download do repositorio:
 
 * git clone https://github.com/Gabrirodri/Jogo-Xadres-Java-Chess-Game
 
