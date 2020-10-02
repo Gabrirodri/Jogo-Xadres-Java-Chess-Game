@@ -32,6 +32,7 @@ javac @sources.txt
 
 ### Execução do programa (Run)
 cd src
+
 java  application/Program
 
 ## Checklist
