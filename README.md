@@ -39,9 +39,10 @@ Abra o terminal e faça Download do repositorio:
 ### Execução do programa (Run)
 * cd src
 
-(OBS.: Se voce estiver executando pelo CMD do windows: Executar essa linha de comando antes da proxima)
-* (start "" "%ProgramFiles%\Git\git-bash.exe")
-  (Para abrir pelo git bash, pois no CMD os caracteres nao vao ter cores)
+####   (OBS.: Se voce estiver executando pelo CMD do windows: Executar essa linha de comando antes da proxima)
+*   (start "" "%ProgramFiles%\Git\git-bash.exe")
+
+    (Para abrir pelo git bash, pois no CMD os caracteres nao vao ter cores)
 
 * java  application/Program
 
