@@ -8,6 +8,11 @@ Assim como mostrado na imagem
 ![imagem-projeto](https://github.com/Gabrirodri/Jogo-Xadres-Java-Chess-Game/blob/master/chess-game-image.jpg)
 
 # Getting started (Instalação, Compilação, Execução)
+### REQUISITOS
+Ter instalado na sua maquina o GIT (https://git-scm.com/downloads)
+Ter instalado na sua maquina o Java (https://www.java.com/pt-BR/download/) JDK (Java Development Kit)
+Ter ambiente de desenvolvimento java configurado - variaveis globais (JAVA_HOME)
+Acessar o terminal para executar os comandos ou compilar e executar por uma IDE(Eclipse, IntelliJ IDEA)
 
 ### Download 
 
