@@ -13,7 +13,7 @@ Assim como mostrado na imagem
 * Ter instalado na sua maquina o Java (https://www.java.com/pt-BR/download/) JDK (Java Development Kit)
 * Ter ambiente de desenvolvimento java configurado - variaveis globais (JAVA_HOME)
 * Acessar o terminal para executar os comandos ou compilar e executar por uma IDE(Eclipse, IntelliJ IDEA)
-
+* Projeto tambem pode ser executado em nuvem com Eclipse Che (https://www.eclipse.org/che/getting-started/)
 
 ### Download 
 
